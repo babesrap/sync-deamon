@@ -2,7 +2,7 @@
 # Demon synchronizujący katalogi
 Projekt implementuje daemon systemowy monitorujący i synchronizujący zawartość dwóch katalogów w systemie operacyjnym. Demon działa w tle, okresowo porównując katalog źródłowy z docelowym i aktualizując zawartość katalogu docelowego na podstawie zmian w katalogu źródłowym.
 
-## 🔍 Główne Funkcje
+## Główne Funkcje
 
 - **Automatyczna synchronizacja katalogów** - kopiowanie nowych i zmodyfikowanych plików, usuwanie nieobecnych
 - **Tryb działania w tle** - działa jako daemon systemowy nie wymagający interakcji z użytkownikiem
@@ -11,13 +11,13 @@ Projekt implementuje daemon systemowy monitorujący i synchronizujący zawartoś
 - **Reagowanie na sygnały** - natychmiastowa synchronizacja na żądanie (SIGUSR1)
 - **Szczegółowe logowanie** - informacje o wszystkich operacjach w dzienniku systemowym
 
-## 🔧 Kompilacja
+## Kompilacja
 
 ```
 gcc -o dirsyncd zadanie1.c
 ```
 
-## 🚀 Użycie
+## Użycie
 Podstawowe uruchomienie:
 ```
 ./dirsyncd <katalog_źródłowy> <katalog_docelowy>
@@ -34,7 +34,7 @@ Paramtery:
 | `-s interwał` | Ustawia czas między synchronizacjami w sekundach (domyślnie 300s) |
 | `-t próg` | Określa próg rozmiaru pliku w bajtach dla metody mmap |
 
-## ⚙️ Zarządzanie demonem
+## Zarządzanie demonem
 
 ### Sygnały sterujące:
 
